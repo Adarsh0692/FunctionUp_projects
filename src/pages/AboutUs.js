@@ -2,10 +2,13 @@ import React from 'react'
 import Style from './AboutUs.module.css'
 import Button from '../components/Button'
 import ReactPlayer from 'react-player'
+import Navbar from './Navbar'
+import Footer from './Footer';
 
 export default function AboutUs() {
     return (
         <>
+           <Navbar/>
             <div className={Style.main_aboutdiv}>
                 <section>
                     {/* <iframe width="560" height="315" src="https://www.youtube.com/embed/X_9VoqR5ojM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> */}
@@ -38,6 +41,7 @@ Moreover, the magnificent random display of imagery in a masonry type makes a st
                 </section>
 
             </div>
+            <Footer/>
         </>
     )
 }

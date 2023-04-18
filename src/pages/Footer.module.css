@@ -22,7 +22,7 @@
 .table td{
     color: aliceblue;
     font-size: large;
-    font-style:italic;
+    /* font-style:italic; */
    
 }
 .table{
@@ -34,4 +34,13 @@
     color: azure;
     display: flex;
     justify-content: center;
+}
+.mediaIcon{
+    display: flex;
+    font-size: 2em;
+    color: tomato;
+    gap: 20px;
+    margin-top: 1.5em;
+    cursor: pointer;
+    
 }

@@ -18,3 +18,15 @@
     
 }
 
+    .btn{
+        
+        height: 40px;
+        width: 10vw;
+        background-color: tomato;
+        border: none;
+        border-radius: 7px;
+        color: aliceblue;
+        
+    }
+
+

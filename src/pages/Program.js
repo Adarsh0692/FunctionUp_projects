@@ -1,5 +1,7 @@
 import React from 'react'
 import Style from './Program.module.css'
+import Navbar from './Navbar'
+import Footer from './Footer';
 
 export default function Program() {
     const titles = [
@@ -32,6 +34,7 @@ export default function Program() {
     ]
   return (
     <>
+    <Navbar/>
       <h1 className={Style.h1}>Training Programs</h1>
     <div className={Style.main_div}>
       
@@ -48,10 +51,7 @@ export default function Program() {
       </div>
     </div>
     <hr />
-    
-    {/* <div className={Style.training}>
-     <TrainingSection/>
-     </div> */}
+    <Footer/>
     </>
   )
 }

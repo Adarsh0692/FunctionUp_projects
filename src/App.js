@@ -10,22 +10,27 @@ import Footer from './pages/Footer';
 import Registation from './pages/Registation';
 import Training from './pages/Training';
 import Pricing from './pages/Pricing';
+import ProtectsRoutes from './services/ProtectsRoutes';
 
 function App() {
   return (
     <BrowserRouter>
-    <Navbar/>
+    
     <Routes>
       <Route path='/' element={<Home/>} />
       <Route path='/aboutUs' element={<AboutUs/>} />
       <Route path='/programs' element={<Classes/>} />
-      <Route path='/training' element={<Training/>} />
       <Route path='/pricing' element={<Pricing/>} />
       <Route path='/login' element={<Login/>} />
       <Route path='/registation' element={<Registation/>} />
+
+       {/* ProtectedRoutes ==>> */}
+      <Route path='/training' element={<ProtectsRoutes/>}>
+        <Route path='/training' element={<Training/>} />
+      </Route>
       
     </Routes>
-    <Footer/>
+    
     </BrowserRouter>
   );
 }
